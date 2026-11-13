@@ -1,3 +1,5 @@
+> **Abgeloest:** Diese Skripte sind in sqmSQLTool 1.9.226.0 aufgegangen. Neu: `Get-sqmProviderInventory` schreibt je Server eine HTML-Datei mit eingebautem Viewer (Zusammenfuehren, Zuordnung, Security-Filter, Anonymisierung, Export als CSV, Excel und Provider-HTML). Kein Excel und kein PowerShell auf dem Client noetig. Dieses Repo wird nicht weiterentwickelt.
+
 # Provider-Inventar (Auslagerung 30% der Systeme)
 
 Sammelt pro Server alle Angaben, die ein neuer Provider fuer Sizing und Machbarkeit braucht,
