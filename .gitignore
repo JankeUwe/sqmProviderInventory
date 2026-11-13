@@ -1,0 +1,7 @@
+# Scan output and generated workbooks must never be committed
+*.xlsx
+Anonymize_Zuordnung_*.csv
+Pruefbericht_*.txt
+Mapping.csv
+/*.json
+!tests/fixtures/*.json

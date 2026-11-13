@@ -1,0 +1,1566 @@
+{
+ "schema_version": "1.0",
+ "tool_version": "0.1.0",
+ "scan_started": "2026-11-13T08:06:00",
+ "scan_finished": "2026-11-13T08:06:21",
+ "scan_duration_sec": 21,
+ "scanned_by": "EXAMPLE\\scanuser",
+ "powershell_version": "5.1.26100.9818",
+ "options": {
+  "include_agent_jobs": true,
+  "skip_security": false,
+  "skip_per_database": false,
+  "sample_seconds": 5,
+  "backup_history_days": 30
+ },
+ "mapping": {
+  "application": "AppA|AppB",
+  "parent_group": "GroupX"
+ },
+ "host": {
+  "computer_name": "FIXTURE01",
+  "fqdn": "FIXTURE01.example.test",
+  "domain": "example.test",
+  "part_of_domain": false,
+  "manufacturer": "Micro-Star International Co., Ltd.",
+  "model": "MS-7E36",
+  "memory_mb": 15869,
+  "is_virtual": false,
+  "cpu": {
+   "sockets": 1,
+   "cores": 8,
+   "logical_processors": 16,
+   "model": "AMD Ryzen 7 8700F 8-Core Processor             ",
+   "max_clock_mhz": 4101
+  },
+  "last_boot": "2026-11-11T02:15:55",
+  "pagefile_configured_mb": 38912,
+  "os": {
+   "caption": "Microsoft Windows 11 Home",
+   "version": "10.0.26300",
+   "build": "26300",
+   "architecture": "64-Bit",
+   "service_pack": null,
+   "install_date": "2026-07-05",
+   "edition_id": "Core",
+   "installation_type": "Client",
+   "display_version": "26H2",
+   "ubr": 9974,
+   "product_name": "Windows 10 Home"
+  },
+  "time_zone": "(UTC+01:00) Amsterdam, Berlin, Bern, Rom, Stockholm, Wien",
+  "power_plan": null,
+  "last_hotfix": {
+   "id": "KB5132061",
+   "installed_on": "2026-11-11"
+  },
+  "ip_addresses": [],
+  "volumes": [
+   {
+    "name": "C:\\",
+    "label": "Windows",
+    "file_system": "NTFS",
+    "block_size": 4096,
+    "size_gb": 943.72,
+    "free_gb": 303.57,
+    "used_gb": 640.15
+   },
+   {
+    "name": "E:\\",
+    "label": "BackUpData",
+    "file_system": "NTFS",
+    "block_size": 4096,
+    "size_gb": 931.48,
+    "free_gb": 911.93,
+    "used_gb": 19.55
+   }
+  ],
+  "disk_drives": [
+   {
+    "model": "WD Elements 2621 USB Device",
+    "size_gb": 931.5,
+    "interface": "USB",
+    "media_type": "External hard disk media"
+   },
+   {
+    "model": "PNY CS1030 1TB SSD",
+    "size_gb": 953.9,
+    "interface": "SCSI",
+    "media_type": "Fixed hard disk media"
+   },
+   {
+    "model": "Kingston DataTraveler 2.0 USB Device",
+    "size_gb": 14.5,
+    "interface": "USB",
+    "media_type": "Removable Media"
+   }
+  ],
+  "physical_disks": [
+   {
+    "friendly_name": "Kingston DataTraveler 2.0",
+    "media_type": "Unspecified",
+    "bus_type": "USB",
+    "size_gb": 14.5
+   },
+   {
+    "friendly_name": "PNY CS1030 1TB SSD",
+    "media_type": "SSD",
+    "bus_type": "NVMe",
+    "size_gb": 953.9
+   },
+   {
+    "friendly_name": "WD Elements 2621",
+    "media_type": "HDD",
+    "bus_type": "USB",
+    "size_gb": 931.5
+   }
+  ],
+  "sql_services": [
+   {
+    "name": "PowerBIReportServer",
+    "display_name": "Power BI Report Server",
+    "state": "Running",
+    "start_mode": "Auto",
+    "account": "NT SERVICE\\PowerBIReportServer"
+   }
+  ],
+  "third_party_services": [],
+  "errors": [
+   {
+    "section": "host.powerplan",
+    "message": "Nur Administratoren sind w\u00e4hrend einer Terminaldienste-Remotesitzung berechtigt Serversoftware hinzuzuf\u00fcgen, zu entfernen oder zu konfigurieren. Wenn Sie Software auf dem Server installieren oder konfigurieren m\u00f6chten, wenden Sie sich an den Netzwerkadministrator. "
+   }
+  ]
+ },
+ "instances": [
+  {
+   "instance_name": "localhost,1434",
+   "connect_target": "localhost,1434",
+   "connected": true,
+   "connect_error": null,
+   "server": {
+    "machine_name": "62fba07215f0",
+    "server_name": "ede94e62fb01",
+    "product_version": "17.0.4065.4",
+    "product_level": "RTM",
+    "product_update_level": "CU7",
+    "product_update_reference": "KB5096981",
+    "edition": "Enterprise Developer Edition (64-bit)",
+    "engine_edition": 3,
+    "collation": "SQL_Latin1_General_CP1_CI_AS",
+    "is_clustered": 0,
+    "is_hadr_enabled": 0,
+    "windows_auth_only": 0,
+    "fulltext_installed": 0,
+    "polybase_installed": 0,
+    "default_data_path": "/var/opt/mssql/data/",
+    "default_log_path": "/var/opt/mssql/data/",
+    "version_string": "Microsoft SQL Server 2025 (RTM-CU7) (KB5096981) - 17.0.4065.4 (X64) \n\tJul  8 2026 23:26:08 \n\tCopyright (C) 2025 Microsoft Corporation\n\tEnterprise Developer Edition (64-bit) on Linux (Ubuntu 24.04.4 LTS) <X64>",
+    "major_version": 17,
+    "sqlserver_start_time": "2026-11-12T10:04:12",
+    "uptime_hours": 21,
+    "cpu_count": 16,
+    "hyperthread_ratio": 16,
+    "socket_count": 1,
+    "cores_per_socket": 8,
+    "licensed_cores_visible_online": 16,
+    "virtual_machine_type": "HYPERVISOR",
+    "physical_memory_mb": 2048,
+    "os_available_memory_mb": 645,
+    "os_memory_state": "Available physical memory is high"
+   },
+   "config": {
+    "cost threshold for parallelism": 50,
+    "max degree of parallelism": 2,
+    "min server memory (MB)": 16,
+    "max server memory (MB)": 2147483647,
+    "clr enabled": 0,
+    "remote admin connections": 0,
+    "backup compression default": 0,
+    "filestream access level": 0,
+    "optimize for ad hoc workloads": 0,
+    "backup checksum default": 0,
+    "Agent XPs": 0,
+    "Database Mail XPs": 0,
+    "Ole Automation Procedures": 0,
+    "xp_cmdshell": 0,
+    "Ad Hoc Distributed Queries": 0,
+    "contained database authentication": 0
+   },
+   "tcp_settings": [
+    {
+     "registry_key": "HKLM\\Software\\Microsoft\\Microsoft SQL Server\\MSSQL16.MSSQLSERVER\\MSSQLServer\\SuperSocketNetLib\\Tcp\\IPAll",
+     "value_name": "TcpPort",
+     "value_data": "1433"
+    },
+    {
+     "registry_key": "HKLM\\Software\\Microsoft\\Microsoft SQL Server\\MSSQL16.MSSQLSERVER\\MSSQLServer\\SuperSocketNetLib\\Tcp\\IPAll",
+     "value_name": "TcpDynamicPorts",
+     "value_data": ""
+    }
+   ],
+   "endpoints": [
+    {
+     "name": "TSQL Default VIA",
+     "type_desc": "TSQL",
+     "state_desc": "STARTED",
+     "port": null
+    }
+   ],
+   "load": {
+    "cpu_samples_minutes": 256,
+    "sql_cpu_avg_pct": 0,
+    "sql_cpu_p95_pct": 0,
+    "sql_cpu_max_pct": 0,
+    "total_cpu_avg_pct": 1,
+    "total_cpu_p95_pct": 1,
+    "total_cpu_max_pct": 1,
+    "page_life_expectancy_sec": 61040,
+    "total_server_memory_mb": 878,
+    "target_server_memory_mb": 1412,
+    "user_connections": 8,
+    "batch_requests_per_sec_avg_since_start": 2,
+    "batch_requests_per_sec_sampled": 2.2,
+    "transactions_per_sec_avg_since_start": 1.7,
+    "transactions_per_sec_sampled": 0.2,
+    "compilations_per_sec_avg_since_start": 0.3,
+    "compilations_per_sec_sampled": 0,
+    "sample_seconds": 5
+   },
+   "databases": [
+    {
+     "name": "OLTest",
+     "database_id": 5,
+     "state": "ONLINE",
+     "compatibility_level": 170,
+     "recovery_model": "FULL",
+     "collation": "SQL_Latin1_General_CP1_CI_AS",
+     "owner": "sa",
+     "create_date": "2026-10-04T10:51:50",
+     "is_read_only": false,
+     "is_snapshot": false,
+     "page_verify": "CHECKSUM",
+     "containment": "NONE",
+     "is_encrypted_tde": false,
+     "tde_algorithm": null,
+     "service_broker": true,
+     "is_published": false,
+     "is_subscribed": false,
+     "is_merge_published": false,
+     "is_distributor": false,
+     "cdc_enabled": false,
+     "data_size_mb": 136,
+     "data_used_mb": 99.9,
+     "log_size_mb": 136,
+     "log_used_pct": 4.733728,
+     "file_count": 2,
+     "table_count": 2,
+     "clr_assemblies": 0,
+     "always_encrypted_keys": null,
+     "growth_mb_per_month": null,
+     "full_backup_size_history_mb": "2026-11=101",
+     "backup": {
+      "full": {
+       "last_finish": "2026-11-06T10:52:57",
+       "count_in_window": 1,
+       "avg_duration_sec": 1,
+       "max_duration_sec": 1,
+       "avg_size_mb": 101.1,
+       "max_size_mb": 101.1,
+       "avg_compressed_mb": 101.1,
+       "last_target": "/var/opt/mssql/data/stub_OLTest.bak"
+      },
+      "diff": {
+       "last_finish": null,
+       "count_in_window": null,
+       "avg_duration_sec": null,
+       "max_duration_sec": null,
+       "avg_size_mb": null,
+       "max_size_mb": null,
+       "avg_compressed_mb": null,
+       "last_target": null
+      },
+      "log": {
+       "last_finish": null,
+       "count_in_window": null,
+       "avg_duration_sec": null,
+       "max_duration_sec": null,
+       "avg_size_mb": null,
+       "max_size_mb": null,
+       "avg_compressed_mb": null,
+       "last_target": null
+      }
+     }
+    },
+    {
+     "name": "ReportServer",
+     "database_id": 6,
+     "state": "ONLINE",
+     "compatibility_level": 170,
+     "recovery_model": "FULL",
+     "collation": "Latin1_General_100_CI_AS_KS_WS",
+     "owner": "sa",
+     "create_date": "2026-10-09T12:33:40",
+     "is_read_only": false,
+     "is_snapshot": false,
+     "page_verify": "CHECKSUM",
+     "containment": "NONE",
+     "is_encrypted_tde": false,
+     "tde_algorithm": null,
+     "service_broker": true,
+     "is_published": false,
+     "is_subscribed": false,
+     "is_merge_published": false,
+     "is_distributor": false,
+     "cdc_enabled": false,
+     "data_size_mb": 72,
+     "data_used_mb": 18.2,
+     "log_size_mb": 200,
+     "log_used_pct": 40.6109619,
+     "file_count": 2,
+     "table_count": 46,
+     "clr_assemblies": 0,
+     "always_encrypted_keys": null,
+     "growth_mb_per_month": null,
+     "full_backup_size_history_mb": "2026-11=23",
+     "backup": {
+      "full": {
+       "last_finish": "2026-11-06T10:52:59",
+       "count_in_window": 1,
+       "avg_duration_sec": 1,
+       "max_duration_sec": 1,
+       "avg_size_mb": 23.1,
+       "max_size_mb": 23.1,
+       "avg_compressed_mb": 23.1,
+       "last_target": "/var/opt/mssql/data/stub_ReportServer.bak"
+      },
+      "diff": {
+       "last_finish": null,
+       "count_in_window": null,
+       "avg_duration_sec": null,
+       "max_duration_sec": null,
+       "avg_size_mb": null,
+       "max_size_mb": null,
+       "avg_compressed_mb": null,
+       "last_target": null
+      },
+      "log": {
+       "last_finish": null,
+       "count_in_window": null,
+       "avg_duration_sec": null,
+       "max_duration_sec": null,
+       "avg_size_mb": null,
+       "max_size_mb": null,
+       "avg_compressed_mb": null,
+       "last_target": null
+      }
+     }
+    },
+    {
+     "name": "ReportServerPBIRS",
+     "database_id": 9,
+     "state": "ONLINE",
+     "compatibility_level": 170,
+     "recovery_model": "FULL",
+     "collation": "Latin1_General_100_CI_AS_KS_WS",
+     "owner": "sa",
+     "create_date": "2026-11-01T12:31:07",
+     "is_read_only": false,
+     "is_snapshot": false,
+     "page_verify": "CHECKSUM",
+     "containment": "NONE",
+     "is_encrypted_tde": false,
+     "tde_algorithm": null,
+     "service_broker": true,
+     "is_published": false,
+     "is_subscribed": false,
+     "is_merge_published": false,
+     "is_distributor": false,
+     "cdc_enabled": false,
+     "data_size_mb": 72,
+     "data_used_mb": 18.1,
+     "log_size_mb": 136,
+     "log_used_pct": 48.87689,
+     "file_count": 2,
+     "table_count": 46,
+     "clr_assemblies": 0,
+     "always_encrypted_keys": null,
+     "growth_mb_per_month": null,
+     "full_backup_size_history_mb": "2026-11=18",
+     "backup": {
+      "full": {
+       "last_finish": "2026-11-06T10:53:00",
+       "count_in_window": 1,
+       "avg_duration_sec": 1,
+       "max_duration_sec": 1,
+       "avg_size_mb": 18.1,
+       "max_size_mb": 18.1,
+       "avg_compressed_mb": 18.1,
+       "last_target": "/var/opt/mssql/data/stub_ReportServerPBIRS.bak"
+      },
+      "diff": {
+       "last_finish": null,
+       "count_in_window": null,
+       "avg_duration_sec": null,
+       "max_duration_sec": null,
+       "avg_size_mb": null,
+       "max_size_mb": null,
+       "avg_compressed_mb": null,
+       "last_target": null
+      },
+      "log": {
+       "last_finish": null,
+       "count_in_window": null,
+       "avg_duration_sec": null,
+       "max_duration_sec": null,
+       "avg_size_mb": null,
+       "max_size_mb": null,
+       "avg_compressed_mb": null,
+       "last_target": null
+      }
+     }
+    },
+    {
+     "name": "ReportServerPBIRSTempDB",
+     "database_id": 10,
+     "state": "ONLINE",
+     "compatibility_level": 170,
+     "recovery_model": "SIMPLE",
+     "collation": "Latin1_General_100_CI_AS_KS_WS",
+     "owner": "sa",
+     "create_date": "2026-11-01T12:31:07",
+     "is_read_only": false,
+     "is_snapshot": false,
+     "page_verify": "CHECKSUM",
+     "containment": "NONE",
+     "is_encrypted_tde": false,
+     "tde_algorithm": null,
+     "service_broker": true,
+     "is_published": false,
+     "is_subscribed": false,
+     "is_merge_published": false,
+     "is_distributor": false,
+     "cdc_enabled": false,
+     "data_size_mb": 8,
+     "data_used_mb": 6.3,
+     "log_size_mb": 8,
+     "log_used_pct": 18.03519,
+     "file_count": 2,
+     "table_count": 14,
+     "clr_assemblies": 0,
+     "always_encrypted_keys": null,
+     "growth_mb_per_month": null,
+     "full_backup_size_history_mb": "2026-11=7",
+     "backup": {
+      "full": {
+       "last_finish": "2026-11-06T10:53:01",
+       "count_in_window": 1,
+       "avg_duration_sec": 1,
+       "max_duration_sec": 1,
+       "avg_size_mb": 6.5,
+       "max_size_mb": 6.5,
+       "avg_compressed_mb": 6.5,
+       "last_target": "/var/opt/mssql/data/stub_ReportServerPBIRSTempDB.bak"
+      },
+      "diff": {
+       "last_finish": null,
+       "count_in_window": null,
+       "avg_duration_sec": null,
+       "max_duration_sec": null,
+       "avg_size_mb": null,
+       "max_size_mb": null,
+       "avg_compressed_mb": null,
+       "last_target": null
+      },
+      "log": {
+       "last_finish": null,
+       "count_in_window": null,
+       "avg_duration_sec": null,
+       "max_duration_sec": null,
+       "avg_size_mb": null,
+       "max_size_mb": null,
+       "avg_compressed_mb": null,
+       "last_target": null
+      }
+     }
+    },
+    {
+     "name": "ReportServerTempDB",
+     "database_id": 7,
+     "state": "ONLINE",
+     "compatibility_level": 170,
+     "recovery_model": "SIMPLE",
+     "collation": "Latin1_General_100_CI_AS_KS_WS",
+     "owner": "sa",
+     "create_date": "2026-10-09T12:33:40",
+     "is_read_only": false,
+     "is_snapshot": false,
+     "page_verify": "CHECKSUM",
+     "containment": "NONE",
+     "is_encrypted_tde": false,
+     "tde_algorithm": null,
+     "service_broker": true,
+     "is_published": false,
+     "is_subscribed": false,
+     "is_merge_published": false,
+     "is_distributor": false,
+     "cdc_enabled": false,
+     "data_size_mb": 8,
+     "data_used_mb": 6.6,
+     "log_size_mb": 8,
+     "log_used_pct": 8.895406,
+     "file_count": 2,
+     "table_count": 14,
+     "clr_assemblies": 0,
+     "always_encrypted_keys": null,
+     "growth_mb_per_month": null,
+     "full_backup_size_history_mb": "2026-11=7",
+     "backup": {
+      "full": {
+       "last_finish": "2026-11-06T10:53:02",
+       "count_in_window": 1,
+       "avg_duration_sec": 1,
+       "max_duration_sec": 1,
+       "avg_size_mb": 6.8,
+       "max_size_mb": 6.8,
+       "avg_compressed_mb": 6.8,
+       "last_target": "/var/opt/mssql/data/stub_ReportServerTempDB.bak"
+      },
+      "diff": {
+       "last_finish": null,
+       "count_in_window": null,
+       "avg_duration_sec": null,
+       "max_duration_sec": null,
+       "avg_size_mb": null,
+       "max_size_mb": null,
+       "avg_compressed_mb": null,
+       "last_target": null
+      },
+      "log": {
+       "last_finish": null,
+       "count_in_window": null,
+       "avg_duration_sec": null,
+       "max_duration_sec": null,
+       "avg_size_mb": null,
+       "max_size_mb": null,
+       "avg_compressed_mb": null,
+       "last_target": null
+      }
+     }
+    },
+    {
+     "name": "Shop",
+     "database_id": 11,
+     "state": "ONLINE",
+     "compatibility_level": 170,
+     "recovery_model": "FULL",
+     "collation": "SQL_Latin1_General_CP1_CI_AS",
+     "owner": "sa",
+     "create_date": "2026-11-04T13:14:00",
+     "is_read_only": false,
+     "is_snapshot": false,
+     "page_verify": "CHECKSUM",
+     "containment": "NONE",
+     "is_encrypted_tde": false,
+     "tde_algorithm": null,
+     "service_broker": true,
+     "is_published": false,
+     "is_subscribed": false,
+     "is_merge_published": false,
+     "is_distributor": false,
+     "cdc_enabled": false,
+     "data_size_mb": 8,
+     "data_used_mb": 3.4,
+     "log_size_mb": 8,
+     "log_used_pct": 18.3773212,
+     "file_count": 2,
+     "table_count": 0,
+     "clr_assemblies": 0,
+     "always_encrypted_keys": null,
+     "growth_mb_per_month": null,
+     "full_backup_size_history_mb": "2026-11=4",
+     "backup": {
+      "full": {
+       "last_finish": "2026-11-06T10:53:02",
+       "count_in_window": 1,
+       "avg_duration_sec": 0,
+       "max_duration_sec": 0,
+       "avg_size_mb": 3.6,
+       "max_size_mb": 3.6,
+       "avg_compressed_mb": 3.6,
+       "last_target": "/var/opt/mssql/data/stub_Shop.bak"
+      },
+      "diff": {
+       "last_finish": null,
+       "count_in_window": null,
+       "avg_duration_sec": null,
+       "max_duration_sec": null,
+       "avg_size_mb": null,
+       "max_size_mb": null,
+       "avg_compressed_mb": null,
+       "last_target": null
+      },
+      "log": {
+       "last_finish": null,
+       "count_in_window": null,
+       "avg_duration_sec": null,
+       "max_duration_sec": null,
+       "avg_size_mb": null,
+       "max_size_mb": null,
+       "avg_compressed_mb": null,
+       "last_target": null
+      }
+     }
+    },
+    {
+     "name": "sqmPerfTest",
+     "database_id": 8,
+     "state": "ONLINE",
+     "compatibility_level": 170,
+     "recovery_model": "FULL",
+     "collation": "SQL_Latin1_General_CP1_CI_AS",
+     "owner": "sa",
+     "create_date": "2026-10-12T17:25:55",
+     "is_read_only": false,
+     "is_snapshot": false,
+     "page_verify": "CHECKSUM",
+     "containment": "NONE",
+     "is_encrypted_tde": false,
+     "tde_algorithm": null,
+     "service_broker": true,
+     "is_published": false,
+     "is_subscribed": false,
+     "is_merge_published": false,
+     "is_distributor": false,
+     "cdc_enabled": false,
+     "data_size_mb": 200,
+     "data_used_mb": 121.6,
+     "log_size_mb": 200,
+     "log_used_pct": 2.10750413,
+     "file_count": 2,
+     "table_count": 4,
+     "clr_assemblies": 0,
+     "always_encrypted_keys": null,
+     "growth_mb_per_month": null,
+     "full_backup_size_history_mb": "2026-11=123",
+     "backup": {
+      "full": {
+       "last_finish": "2026-11-06T10:53:04",
+       "count_in_window": 1,
+       "avg_duration_sec": 1,
+       "max_duration_sec": 1,
+       "avg_size_mb": 123.1,
+       "max_size_mb": 123.1,
+       "avg_compressed_mb": 123.1,
+       "last_target": "/var/opt/mssql/data/stub_sqmPerfTest.bak"
+      },
+      "diff": {
+       "last_finish": null,
+       "count_in_window": null,
+       "avg_duration_sec": null,
+       "max_duration_sec": null,
+       "avg_size_mb": null,
+       "max_size_mb": null,
+       "avg_compressed_mb": null,
+       "last_target": null
+      },
+      "log": {
+       "last_finish": null,
+       "count_in_window": null,
+       "avg_duration_sec": null,
+       "max_duration_sec": null,
+       "avg_size_mb": null,
+       "max_size_mb": null,
+       "avg_compressed_mb": null,
+       "last_target": null
+      }
+     }
+    },
+    {
+     "name": "tempdb",
+     "database_id": 2,
+     "state": "ONLINE",
+     "compatibility_level": 170,
+     "recovery_model": "SIMPLE",
+     "collation": "SQL_Latin1_General_CP1_CI_AS",
+     "owner": "sa",
+     "create_date": "2026-11-12T10:04:17",
+     "is_read_only": false,
+     "is_snapshot": false,
+     "page_verify": "CHECKSUM",
+     "containment": "NONE",
+     "is_encrypted_tde": false,
+     "tde_algorithm": null,
+     "service_broker": true,
+     "is_published": false,
+     "is_subscribed": false,
+     "is_merge_published": false,
+     "is_distributor": false,
+     "cdc_enabled": false,
+     "data_size_mb": 1200,
+     "data_used_mb": null,
+     "log_size_mb": 8,
+     "log_used_pct": 33.91984,
+     "file_count": 9,
+     "table_count": null,
+     "clr_assemblies": null,
+     "always_encrypted_keys": null,
+     "growth_mb_per_month": null,
+     "full_backup_size_history_mb": null,
+     "backup": {
+      "full": {
+       "last_finish": null,
+       "count_in_window": null,
+       "avg_duration_sec": null,
+       "max_duration_sec": null,
+       "avg_size_mb": null,
+       "max_size_mb": null,
+       "avg_compressed_mb": null,
+       "last_target": null
+      },
+      "diff": {
+       "last_finish": null,
+       "count_in_window": null,
+       "avg_duration_sec": null,
+       "max_duration_sec": null,
+       "avg_size_mb": null,
+       "max_size_mb": null,
+       "avg_compressed_mb": null,
+       "last_target": null
+      },
+      "log": {
+       "last_finish": null,
+       "count_in_window": null,
+       "avg_duration_sec": null,
+       "max_duration_sec": null,
+       "avg_size_mb": null,
+       "max_size_mb": null,
+       "avg_compressed_mb": null,
+       "last_target": null
+      }
+     }
+    }
+   ],
+   "files": [
+    {
+     "database": "tempdb",
+     "logical_name": "tempdev",
+     "type": "ROWS",
+     "path": "/var/opt/mssql/data/tempdb.mdf",
+     "size_mb": 150.0,
+     "max_size": -1,
+     "growth": 4096,
+     "percent_growth": false,
+     "volume": null
+    },
+    {
+     "database": "tempdb",
+     "logical_name": "templog",
+     "type": "LOG",
+     "path": "/var/opt/mssql/data/templog.ldf",
+     "size_mb": 8.0,
+     "max_size": -1,
+     "growth": 8192,
+     "percent_growth": false,
+     "volume": null
+    },
+    {
+     "database": "tempdb",
+     "logical_name": "tempdev2",
+     "type": "ROWS",
+     "path": "/var/opt/mssql/data/tempdb2.ndf",
+     "size_mb": 150.0,
+     "max_size": -1,
+     "growth": 4096,
+     "percent_growth": false,
+     "volume": null
+    },
+    {
+     "database": "tempdb",
+     "logical_name": "tempdev3",
+     "type": "ROWS",
+     "path": "/var/opt/mssql/data/tempdb3.ndf",
+     "size_mb": 150.0,
+     "max_size": -1,
+     "growth": 4096,
+     "percent_growth": false,
+     "volume": null
+    },
+    {
+     "database": "tempdb",
+     "logical_name": "tempdev4",
+     "type": "ROWS",
+     "path": "/var/opt/mssql/data/tempdb4.ndf",
+     "size_mb": 150.0,
+     "max_size": -1,
+     "growth": 4096,
+     "percent_growth": false,
+     "volume": null
+    },
+    {
+     "database": "tempdb",
+     "logical_name": "tempdev5",
+     "type": "ROWS",
+     "path": "/var/opt/mssql/data/tempdb5.ndf",
+     "size_mb": 150.0,
+     "max_size": -1,
+     "growth": 4096,
+     "percent_growth": false,
+     "volume": null
+    },
+    {
+     "database": "tempdb",
+     "logical_name": "tempdev6",
+     "type": "ROWS",
+     "path": "/var/opt/mssql/data/tempdb6.ndf",
+     "size_mb": 150.0,
+     "max_size": -1,
+     "growth": 4096,
+     "percent_growth": false,
+     "volume": null
+    },
+    {
+     "database": "tempdb",
+     "logical_name": "tempdev7",
+     "type": "ROWS",
+     "path": "/var/opt/mssql/data/tempdb7.ndf",
+     "size_mb": 150.0,
+     "max_size": -1,
+     "growth": 4096,
+     "percent_growth": false,
+     "volume": null
+    },
+    {
+     "database": "tempdb",
+     "logical_name": "tempdev8",
+     "type": "ROWS",
+     "path": "/var/opt/mssql/data/tempdb8.ndf",
+     "size_mb": 150.0,
+     "max_size": -1,
+     "growth": 4096,
+     "percent_growth": false,
+     "volume": null
+    },
+    {
+     "database": "OLTest",
+     "logical_name": "OLTest",
+     "type": "ROWS",
+     "path": "/var/opt/mssql/data/OLTest.mdf",
+     "size_mb": 136.0,
+     "max_size": -1,
+     "growth": 8192,
+     "percent_growth": false,
+     "volume": null
+    },
+    {
+     "database": "OLTest",
+     "logical_name": "OLTest_log",
+     "type": "LOG",
+     "path": "/var/opt/mssql/data/OLTest_log.ldf",
+     "size_mb": 136.0,
+     "max_size": 268435456,
+     "growth": 8192,
+     "percent_growth": false,
+     "volume": null
+    },
+    {
+     "database": "ReportServer",
+     "logical_name": "ReportServer",
+     "type": "ROWS",
+     "path": "/var/opt/mssql/data/ReportServer.mdf",
+     "size_mb": 72.0,
+     "max_size": -1,
+     "growth": 8192,
+     "percent_growth": false,
+     "volume": null
+    },
+    {
+     "database": "ReportServer",
+     "logical_name": "ReportServer_log",
+     "type": "LOG",
+     "path": "/var/opt/mssql/data/ReportServer_log.ldf",
+     "size_mb": 200.0,
+     "max_size": 268435456,
+     "growth": 8192,
+     "percent_growth": false,
+     "volume": null
+    },
+    {
+     "database": "ReportServerTempDB",
+     "logical_name": "ReportServerTempDB",
+     "type": "ROWS",
+     "path": "/var/opt/mssql/data/ReportServerTempDB.mdf",
+     "size_mb": 8.0,
+     "max_size": -1,
+     "growth": 8192,
+     "percent_growth": false,
+     "volume": null
+    },
+    {
+     "database": "ReportServerTempDB",
+     "logical_name": "ReportServerTempDB_log",
+     "type": "LOG",
+     "path": "/var/opt/mssql/data/ReportServerTempDB_log.ldf",
+     "size_mb": 8.0,
+     "max_size": 268435456,
+     "growth": 8192,
+     "percent_growth": false,
+     "volume": null
+    },
+    {
+     "database": "sqmPerfTest",
+     "logical_name": "sqmPerfTest",
+     "type": "ROWS",
+     "path": "/var/opt/mssql/data/sqmPerfTest.mdf",
+     "size_mb": 200.0,
+     "max_size": -1,
+     "growth": 8192,
+     "percent_growth": false,
+     "volume": null
+    },
+    {
+     "database": "sqmPerfTest",
+     "logical_name": "sqmPerfTest_log",
+     "type": "LOG",
+     "path": "/var/opt/mssql/data/sqmPerfTest_log.ldf",
+     "size_mb": 200.0,
+     "max_size": 268435456,
+     "growth": 8192,
+     "percent_growth": false,
+     "volume": null
+    },
+    {
+     "database": "ReportServerPBIRS",
+     "logical_name": "ReportServerPBIRS",
+     "type": "ROWS",
+     "path": "/var/opt/mssql/data/ReportServerPBIRS.mdf",
+     "size_mb": 72.0,
+     "max_size": -1,
+     "growth": 8192,
+     "percent_growth": false,
+     "volume": null
+    },
+    {
+     "database": "ReportServerPBIRS",
+     "logical_name": "ReportServerPBIRS_log",
+     "type": "LOG",
+     "path": "/var/opt/mssql/data/ReportServerPBIRS_log.ldf",
+     "size_mb": 136.0,
+     "max_size": 268435456,
+     "growth": 8192,
+     "percent_growth": false,
+     "volume": null
+    },
+    {
+     "database": "ReportServerPBIRSTempDB",
+     "logical_name": "ReportServerPBIRSTempDB",
+     "type": "ROWS",
+     "path": "/var/opt/mssql/data/ReportServerPBIRSTempDB.mdf",
+     "size_mb": 8.0,
+     "max_size": -1,
+     "growth": 8192,
+     "percent_growth": false,
+     "volume": null
+    },
+    {
+     "database": "ReportServerPBIRSTempDB",
+     "logical_name": "ReportServerPBIRSTempDB_log",
+     "type": "LOG",
+     "path": "/var/opt/mssql/data/ReportServerPBIRSTempDB_log.ldf",
+     "size_mb": 8.0,
+     "max_size": 268435456,
+     "growth": 8192,
+     "percent_growth": false,
+     "volume": null
+    },
+    {
+     "database": "Shop",
+     "logical_name": "Shop",
+     "type": "ROWS",
+     "path": "/var/opt/mssql/data/Shop.mdf",
+     "size_mb": 8.0,
+     "max_size": -1,
+     "growth": 8192,
+     "percent_growth": false,
+     "volume": null
+    },
+    {
+     "database": "Shop",
+     "logical_name": "Shop_log",
+     "type": "LOG",
+     "path": "/var/opt/mssql/data/Shop_log.ldf",
+     "size_mb": 8.0,
+     "max_size": 268435456,
+     "growth": 8192,
+     "percent_growth": false,
+     "volume": null
+    }
+   ],
+   "cross_database_refs": [
+    {
+     "database": "ReportServer",
+     "ref_server": "",
+     "ref_database": "master",
+     "ref_count": 1
+    },
+    {
+     "database": "ReportServer",
+     "ref_server": "",
+     "ref_database": "msdb",
+     "ref_count": 3
+    },
+    {
+     "database": "ReportServer",
+     "ref_server": "",
+     "ref_database": "ReportServerTempDB",
+     "ref_count": 141
+    },
+    {
+     "database": "ReportServerPBIRS",
+     "ref_server": "",
+     "ref_database": "master",
+     "ref_count": 1
+    },
+    {
+     "database": "ReportServerPBIRS",
+     "ref_server": "",
+     "ref_database": "msdb",
+     "ref_count": 3
+    },
+    {
+     "database": "ReportServerPBIRS",
+     "ref_server": "",
+     "ref_database": "ReportServerPBIRSTempDB",
+     "ref_count": 141
+    }
+   ],
+   "volume_io": [
+    {
+     "volume": "(other/UNC)",
+     "sql_file_count": 29,
+     "sql_files_mb": 2447,
+     "avg_read_latency_ms": 2.7,
+     "avg_write_latency_ms": 1,
+     "avg_iops_since_start": 0.3,
+     "avg_mb_per_sec_since_start": 0,
+     "total_read_gb": 0.2,
+     "total_write_gb": 0.1
+    }
+   ],
+   "linked_servers": [],
+   "agent_jobs_summary": {
+    "total": 0,
+    "enabled": null,
+    "details_collected": true
+   },
+   "agent_jobs": [
+    {
+     "name": "Nightly",
+     "enabled": true,
+     "owner": "sa",
+     "category": "x",
+     "created": null,
+     "modified": null,
+     "step_count": 1,
+     "subsystems": "TSQL",
+     "uses_proxy": false,
+     "schedules": "daily",
+     "last_run": null,
+     "avg_duration_sec": null,
+     "failures_in_history": 0,
+     "external_refs": "\\\\fs01\\share\\x"
+    }
+   ],
+   "high_availability": {
+    "is_hadr_enabled": true,
+    "is_clustered": false,
+    "log_shipping_primary": [],
+    "log_shipping_secondary": [],
+    "mirroring": [],
+    "availability_replicas": [
+     {
+      "ag_name": "AG1",
+      "replica_server_name": "FIXTURE01",
+      "availability_mode_desc": "SYNCHRONOUS_COMMIT",
+      "failover_mode_desc": "AUTOMATIC",
+      "secondary_role_allow_connections_desc": "NO",
+      "role_desc": "PRIMARY",
+      "synchronization_health_desc": "HEALTHY",
+      "is_local": true
+     },
+     {
+      "ag_name": "AG1",
+      "replica_server_name": "FIXTURE02",
+      "availability_mode_desc": "SYNCHRONOUS_COMMIT",
+      "failover_mode_desc": "AUTOMATIC",
+      "secondary_role_allow_connections_desc": "NO",
+      "role_desc": "SECONDARY",
+      "synchronization_health_desc": "HEALTHY",
+      "is_local": false
+     }
+    ],
+    "listeners": [
+     {
+      "ag_name": "AG1",
+      "dns_name": "AG1LSN",
+      "port": 1433
+     }
+    ],
+    "availability_databases": [
+     {
+      "ag_name": "AG1",
+      "database_name": "Shop"
+     }
+    ]
+   },
+   "components": {
+    "database_mail_profiles": 0,
+    "credentials": [],
+    "proxies": [],
+    "certificates": [],
+    "tde_databases": []
+   },
+   "logins": [
+    {
+     "name": "sa",
+     "type": "SQL_LOGIN",
+     "disabled": false,
+     "default_database": "master",
+     "created": "2003-04-08T09:10:35",
+     "modified": "2026-10-23T10:18:14",
+     "is_sysadmin": true,
+     "server_roles": "sysadmin",
+     "is_system": true,
+     "policy_checked": true,
+     "expiration_checked": false
+    },
+    {
+     "name": "BUILTIN\\Administrators",
+     "type": "WINDOWS_GROUP",
+     "disabled": false,
+     "default_database": "master",
+     "created": "2026-07-09T00:31:13",
+     "modified": "2026-07-09T00:31:13",
+     "is_sysadmin": true,
+     "server_roles": "sysadmin",
+     "is_system": false,
+     "policy_checked": null,
+     "expiration_checked": null
+    },
+    {
+     "name": "NT AUTHORITY\\NETWORK SERVICE",
+     "type": "WINDOWS_LOGIN",
+     "disabled": false,
+     "default_database": "master",
+     "created": "2026-07-25T11:31:41",
+     "modified": "2026-07-25T11:31:41",
+     "is_sysadmin": true,
+     "server_roles": "sysadmin",
+     "is_system": true,
+     "policy_checked": null,
+     "expiration_checked": null
+    },
+    {
+     "name": "NT AUTHORITY\\SYSTEM",
+     "type": "WINDOWS_LOGIN",
+     "disabled": false,
+     "default_database": "master",
+     "created": "2026-07-25T11:31:41",
+     "modified": "2026-07-25T11:31:41",
+     "is_sysadmin": true,
+     "server_roles": null,
+     "is_system": true,
+     "policy_checked": null,
+     "expiration_checked": null
+    },
+    {
+     "name": "tU_B1",
+     "type": "SQL_LOGIN",
+     "disabled": false,
+     "default_database": "master",
+     "created": "2026-10-27T09:23:57",
+     "modified": "2026-10-27T09:23:57",
+     "is_sysadmin": false,
+     "server_roles": null,
+     "is_system": false,
+     "policy_checked": false,
+     "expiration_checked": false
+    },
+    {
+     "name": "tU_conf",
+     "type": "SQL_LOGIN",
+     "disabled": false,
+     "default_database": "master",
+     "created": "2026-10-27T09:23:58",
+     "modified": "2026-10-27T09:23:58",
+     "is_sysadmin": false,
+     "server_roles": null,
+     "is_system": false,
+     "policy_checked": false,
+     "expiration_checked": false
+    },
+    {
+     "name": "tU_A1",
+     "type": "SQL_LOGIN",
+     "disabled": false,
+     "default_database": "master",
+     "created": "2026-10-27T09:24:12",
+     "modified": "2026-10-27T09:24:12",
+     "is_sysadmin": false,
+     "server_roles": null,
+     "is_system": false,
+     "policy_checked": false,
+     "expiration_checked": false
+    },
+    {
+     "name": "tU_w",
+     "type": "SQL_LOGIN",
+     "disabled": false,
+     "default_database": "master",
+     "created": "2026-10-27T09:24:35",
+     "modified": "2026-10-27T09:24:35",
+     "is_sysadmin": false,
+     "server_roles": null,
+     "is_system": false,
+     "policy_checked": false,
+     "expiration_checked": false
+    },
+    {
+     "name": "tU_pw",
+     "type": "SQL_LOGIN",
+     "disabled": false,
+     "default_database": "master",
+     "created": "2026-10-27T09:24:39",
+     "modified": "2026-10-27T09:29:55",
+     "is_sysadmin": false,
+     "server_roles": null,
+     "is_system": false,
+     "policy_checked": true,
+     "expiration_checked": true
+    },
+    {
+     "name": "tU_new",
+     "type": "SQL_LOGIN",
+     "disabled": false,
+     "default_database": "master",
+     "created": "2026-10-27T09:29:57",
+     "modified": "2026-10-27T09:29:57",
+     "is_sysadmin": false,
+     "server_roles": null,
+     "is_system": false,
+     "policy_checked": false,
+     "expiration_checked": false
+    },
+    {
+     "name": "EXAMPLE\\appsvc",
+     "type": "WINDOWS_LOGIN",
+     "disabled": false,
+     "default_database": "master",
+     "created": null,
+     "modified": null,
+     "is_sysadmin": false,
+     "server_roles": null,
+     "is_system": false,
+     "policy_checked": null,
+     "expiration_checked": null
+    },
+    {
+     "name": "EXAMPLE\\dba-group",
+     "type": "WINDOWS_GROUP",
+     "disabled": false,
+     "default_database": "master",
+     "created": null,
+     "modified": null,
+     "is_sysadmin": true,
+     "server_roles": "sysadmin",
+     "is_system": false,
+     "policy_checked": null,
+     "expiration_checked": null
+    }
+   ],
+   "server_permissions": [
+    {
+     "grantee": "NT AUTHORITY\\SYSTEM",
+     "permission_name": "ALTER ANY EVENT SESSION",
+     "state_desc": "GRANT"
+    },
+    {
+     "grantee": "NT AUTHORITY\\SYSTEM",
+     "permission_name": "CONNECT ANY DATABASE",
+     "state_desc": "GRANT"
+    },
+    {
+     "grantee": "NT AUTHORITY\\SYSTEM",
+     "permission_name": "VIEW ANY DEFINITION",
+     "state_desc": "GRANT"
+    },
+    {
+     "grantee": "NT AUTHORITY\\SYSTEM",
+     "permission_name": "VIEW SERVER STATE",
+     "state_desc": "GRANT"
+    }
+   ],
+   "db_users": [
+    {
+     "database": "Shop",
+     "name": "EXAMPLE\\appsvc",
+     "type": "WINDOWS_USER",
+     "authentication": "WINDOWS",
+     "login_name": "EXAMPLE\\appsvc",
+     "default_schema": "dbo",
+     "create_date": null,
+     "orphaned": false
+    },
+    {
+     "database": "Shop",
+     "name": "olduser",
+     "type": "SQL_USER",
+     "authentication": "INSTANCE",
+     "login_name": null,
+     "default_schema": "dbo",
+     "create_date": null,
+     "orphaned": true
+    }
+   ],
+   "db_roles": [
+    {
+     "database": "ReportServer",
+     "name": "RSExecRole",
+     "type": "DATABASE_ROLE",
+     "owner": "dbo"
+    },
+    {
+     "database": "ReportServerPBIRS",
+     "name": "RSExecRole",
+     "type": "DATABASE_ROLE",
+     "owner": "dbo"
+    },
+    {
+     "database": "ReportServerPBIRSTempDB",
+     "name": "RSExecRole",
+     "type": "DATABASE_ROLE",
+     "owner": "dbo"
+    },
+    {
+     "database": "ReportServerTempDB",
+     "name": "RSExecRole",
+     "type": "DATABASE_ROLE",
+     "owner": "dbo"
+    }
+   ],
+   "db_role_members": [
+    {
+     "database": "ReportServer",
+     "role": "db_owner",
+     "member": "RSExecRole",
+     "member_type": "DATABASE_ROLE",
+     "role_is_fixed": true
+    },
+    {
+     "database": "ReportServerPBIRS",
+     "role": "db_owner",
+     "member": "RSExecRole",
+     "member_type": "DATABASE_ROLE",
+     "role_is_fixed": true
+    },
+    {
+     "database": "ReportServerPBIRSTempDB",
+     "role": "db_owner",
+     "member": "RSExecRole",
+     "member_type": "DATABASE_ROLE",
+     "role_is_fixed": true
+    },
+    {
+     "database": "ReportServerTempDB",
+     "role": "db_owner",
+     "member": "RSExecRole",
+     "member_type": "DATABASE_ROLE",
+     "role_is_fixed": true
+    }
+   ],
+   "db_permissions": [
+    {
+     "database": "ReportServer",
+     "grantee": "RSExecRole",
+     "grantee_type": "DATABASE_ROLE",
+     "class": "OBJECT_OR_COLUMN",
+     "permission": "DELETE",
+     "state": "GRANT",
+     "target": "dbo.SnapshotData"
+    },
+    {
+     "database": "ReportServer",
+     "grantee": "RSExecRole",
+     "grantee_type": "DATABASE_ROLE",
+     "class": "OBJECT_OR_COLUMN",
+     "permission": "INSERT",
+     "state": "GRANT",
+     "target": "dbo.SnapshotData"
+    },
+    {
+     "database": "ReportServer",
+     "grantee": "RSExecRole",
+     "grantee_type": "DATABASE_ROLE",
+     "class": "OBJECT_OR_COLUMN",
+     "permission": "REFERENCES",
+     "state": "GRANT",
+     "target": "dbo.SnapshotData"
+    },
+    {
+     "database": "ReportServer",
+     "grantee": "RSExecRole",
+     "grantee_type": "DATABASE_ROLE",
+     "class": "OBJECT_OR_COLUMN",
+     "permission": "SELECT",
+     "state": "GRANT",
+     "target": "dbo.SnapshotData"
+    },
+    {
+     "database": "ReportServer",
+     "grantee": "RSExecRole",
+     "grantee_type": "DATABASE_ROLE",
+     "class": "OBJECT_OR_COLUMN",
+     "permission": "UPDATE",
+     "state": "GRANT",
+     "target": "dbo.SnapshotData"
+    },
+    {
+     "database": "ReportServer",
+     "grantee": "RSExecRole",
+     "grantee_type": "DATABASE_ROLE",
+     "class": "OBJECT_OR_COLUMN",
+     "permission": "EXECUTE",
+     "state": "GRANT",
+     "target": "dbo.CleanAllHistories"
+    },
+    {
+     "database": "ReportServer",
+     "grantee": "RSExecRole",
+     "grantee_type": "DATABASE_ROLE",
+     "class": "OBJECT_OR_COLUMN",
+     "permission": "EXECUTE",
+     "state": "GRANT",
+     "target": "dbo.CleanExpiredContentCache"
+    },
+    {
+     "database": "ReportServer",
+     "grantee": "RSExecRole",
+     "grantee_type": "DATABASE_ROLE",
+     "class": "OBJECT_OR_COLUMN",
+     "permission": "EXECUTE",
+     "state": "GRANT",
+     "target": "dbo.DeleteHistoryRecord"
+    },
+    {
+     "database": "ReportServer",
+     "grantee": "RSExecRole",
+     "grantee_type": "DATABASE_ROLE",
+     "class": "OBJECT_OR_COLUMN",
+     "permission": "EXECUTE",
+     "state": "GRANT",
+     "target": "dbo.GetCurrentProductInfo"
+    },
+    {
+     "database": "ReportServer",
+     "grantee": "RSExecRole",
+     "grantee_type": "DATABASE_ROLE",
+     "class": "OBJECT_OR_COLUMN",
+     "permission": "DELETE",
+     "state": "GRANT",
+     "target": "dbo.ChunkData"
+    },
+    {
+     "database": "ReportServer",
+     "grantee": "RSExecRole",
+     "grantee_type": "DATABASE_ROLE",
+     "class": "OBJECT_OR_COLUMN",
+     "permission": "INSERT",
+     "state": "GRANT",
+     "target": "dbo.ChunkData"
+    },
+    {
+     "database": "ReportServer",
+     "grantee": "RSExecRole",
+     "grantee_type": "DATABASE_ROLE",
+     "class": "OBJECT_OR_COLUMN",
+     "permission": "REFERENCES",
+     "state": "GRANT",
+     "target": "dbo.ChunkData"
+    },
+    {
+     "database": "ReportServer",
+     "grantee": "RSExecRole",
+     "grantee_type": "DATABASE_ROLE",
+     "class": "OBJECT_OR_COLUMN",
+     "permission": "SELECT",
+     "state": "GRANT",
+     "target": "dbo.ChunkData"
+    },
+    {
+     "database": "ReportServer",
+     "grantee": "RSExecRole",
+     "grantee_type": "DATABASE_ROLE",
+     "class": "OBJECT_OR_COLUMN",
+     "permission": "UPDATE",
+     "state": "GRANT",
+     "target": "dbo.ChunkData"
+    },
+    {
+     "database": "ReportServer",
+     "grantee": "RSExecRole",
+     "grantee_type": "DATABASE_ROLE",
+     "class": "OBJECT_OR_COLUMN",
+     "permission": "EXECUTE",
+     "state": "GRANT",
+     "target": "dbo.DeleteAllHistoryForReport"
+    },
+    {
+     "database": "ReportServer",
+     "grantee": "RSExecRole",
+     "grantee_type": "DATABASE_ROLE",
+     "class": "OBJECT_OR_COLUMN",
+     "permission": "EXECUTE",
+     "state": "GRANT",
+     "target": "dbo.AddProductInfo"
+    },
+    {
+     "database": "ReportServer",
+     "grantee": "RSExecRole",
+     "grantee_type": "DATABASE_ROLE",
+     "class": "OBJECT_OR_COLUMN",
+     "permission": "EXECUTE",
+     "state": "GRANT",
+     "target": "dbo.DeleteHistoriesWithNoPolicy"
+    },
+    {
+     "database": "ReportServer",
+     "grantee": "RSExecRole",
+     "grantee_type": "DATABASE_ROLE",
+     "class": "OBJECT_OR_COLUMN",
+     "permission": "EXECUTE",
+     "state": "GRANT",
+     "target": "dbo.Get_sqlagent_job_status"
+    },
+    {
+     "database": "ReportServer",
+     "grantee": "RSExecRole",
+     "grantee_type": "DATABASE_ROLE",
+     "class": "OBJECT_OR_COLUMN",
+     "permission": "EXECUTE",
+     "state": "GRANT",
+     "target": "dbo.CreateTask"
+    },
+    {
+     "database": "ReportServer",
+     "grantee": "RSExecRole",
+     "grantee_type": "DATABASE_ROLE",
+     "class": "OBJECT_OR_COLUMN",
+     "permission": "DELETE",
+     "state": "GRANT",
+     "target": "dbo.Notifications"
+    }
+   ],
+   "errors": []
+  }
+ ]
+}
